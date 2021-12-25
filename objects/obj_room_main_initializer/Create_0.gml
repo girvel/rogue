@@ -1,0 +1,1 @@
+global.grid_size = 64

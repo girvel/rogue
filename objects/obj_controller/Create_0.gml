@@ -1,0 +1,1 @@
+controls = obj_main_character

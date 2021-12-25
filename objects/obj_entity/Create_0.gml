@@ -1,2 +1,1 @@
-grid_x = x / global.grid_size
-grid_y = y / global.grid_size
+set_position(x / global.grid_size, y / global.grid_size)

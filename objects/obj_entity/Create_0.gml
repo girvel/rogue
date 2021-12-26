@@ -1,1 +1,1 @@
-set_position(x / global.grid_size, y / global.grid_size)
+set_position(x / room.grid_size, y / room.grid_size)

@@ -1,6 +1,6 @@
 {
   "resources": [
-    {"id":{"name":"tile_stone","path":"tilesets/tile_stone/tile_stone.yy",},"order":0,},
+    {"id":{"name":"tileset_default","path":"tilesets/tileset_default/tileset_default.yy",},"order":0,},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"order":2,},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},"order":1,},
     {"id":{"name":"move","path":"scripts/move/move.yy",},"order":1,},

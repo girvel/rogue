@@ -1,8 +1,13 @@
 // @function set_position
 
 function set_position(_x, _y) {
-	show_debug_message(string(_x) + ", " + string(_y))
-	if room.space[# _x, _y] != noone {
+	if (
+		_x < 0 
+		or _y < 0 
+		or _x >= ds_grid_width(room.space) 
+		or _y >= ds_grid_height(room.space)
+		or room.space[# _x, _y] != noone
+	) {
 		return false
 	}
 	

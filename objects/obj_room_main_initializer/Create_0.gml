@@ -21,7 +21,9 @@ global.tilemap = layer_tilemap_create(
 room_height = global.level_h * global.grid_size
 room_width  = global.level_w * global.grid_size
 
-generate_dungeon(0, 0, 5)
+generate_dungeon(global.level_h / 2, global.level_w / 2, 5)
 
 // TODO instantiate_space()
-with instance_create_layer(0, 0, "Instances", obj_main_character) set_position(0, 0)
+with instance_create_layer(0, 0, "Instances", obj_main_character) {
+	set_position(global.level_h / 2, global.level_w / 2)
+}

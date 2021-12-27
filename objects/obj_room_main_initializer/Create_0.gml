@@ -1,22 +1,27 @@
-global.space_grid_size = 64
-global.space = ds_grid_create(100, 100)
+global.grid_size = 64
+
+global.level_w = 100
+global.level_h = 100
+
+global.space = ds_grid_create(global.level_w, global.level_h)
 ds_grid_clear(global.space, noone)
 
-// TODO instantiate_space()
-with instance_create_layer(0, 0, "Instances", obj_main_character) set_position(5, 5)
+global.floor = ds_grid_create(global.level_w, global.level_h)
+ds_grid_clear(global.floor, 0)
 
-room.floor = ds_grid_create(100, 100)
-ds_grid_clear(room.floor, noone)
-
-var tilemap = layer_tilemap_create(
+global.tilemap = layer_tilemap_create(
 	layer_create(1, "Tile"), 
 	0, 
 	0, 
 	tileset_default, 
-	room_width / global.space_grid_size, 
-	room_height / global.space_grid_size
+	global.level_w, 
+	global.level_h
 )
 
-tilemap_set(tilemap, 1, 0, 0)
+room_height = global.level_h * global.grid_size
+room_width  = global.level_w * global.grid_size
 
-//room.floor[# 5, 5] = 
+generate_dungeon(0, 0, 5)
+
+// TODO instantiate_space()
+with instance_create_layer(0, 0, "Instances", obj_main_character) set_position(0, 0)

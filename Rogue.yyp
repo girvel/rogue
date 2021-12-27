@@ -1,7 +1,9 @@
 {
   "resources": [
     {"id":{"name":"tileset_default","path":"tilesets/tileset_default/tileset_default.yy",},"order":0,},
+    {"id":{"name":"generate_dungeon","path":"scripts/generate_dungeon/generate_dungeon.yy",},"order":2,},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"order":2,},
+    {"id":{"name":"set_tile","path":"scripts/set_tile/set_tile.yy",},"order":3,},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},"order":1,},
     {"id":{"name":"move","path":"scripts/move/move.yy",},"order":1,},
     {"id":{"name":"set_position","path":"scripts/set_position/set_position.yy",},"order":0,},

@@ -1,1 +1,1 @@
-controls = obj_main_character
+controls = obj_main_character.id

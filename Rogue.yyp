@@ -6,7 +6,7 @@
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"order":2,},
     {"id":{"name":"set_tile","path":"scripts/set_tile/set_tile.yy",},"order":3,},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},"order":1,},
-    {"id":{"name":"move","path":"scripts/move/move.yy",},"order":1,},
+    {"id":{"name":"try_move","path":"scripts/try_move/try_move.yy",},"order":1,},
     {"id":{"name":"set_position","path":"scripts/set_position/set_position.yy",},"order":0,},
     {"id":{"name":"spr_main_character","path":"sprites/spr_main_character/spr_main_character.yy",},"order":0,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":1,},

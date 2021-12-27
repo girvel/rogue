@@ -1,7 +1,7 @@
 function generate_dungeon(_x, _y, _rooms_n) {
 	if not _rooms_n return;
 	
-	var hallway_length = irandom_range(5, 12)
+	var hallway_length = irandom_range(9, 13)
 	var room_size = irandom_range(5, 7)
 	
 	// TODO this is unstable
@@ -34,7 +34,7 @@ function generate_dungeon(_x, _y, _rooms_n) {
 			new_y += dir_y
 		}
 		
-		var l = hallway_length + room_size * 2 - 1
+		var l = hallway_length + room_size - 1
 		if in_grid(new_x + dir_x * l, new_y + dir_y * l, global.floor) {
 			_x = new_x
 			_y = new_y
@@ -42,14 +42,19 @@ function generate_dungeon(_x, _y, _rooms_n) {
 		}
 	}
 	
-	show_debug_message("Starting at" + string(_x) + "; " + string(_y))
 	repeat (hallway_length) {
 		set_tile(global.tilemap, 1, _x, _y)
 		
 		_x += dir_x;
 		_y += dir_y;
 	}
-	show_debug_message("Ending at" + string(_x) + "; " + string(_y))
+	
+	var half_size = floor(room_size / 2)
+	for (var dx = -half_size; dx <= half_size; dx++) {
+		for (var dy = -half_size; dy <= half_size; dy++) {
+			set_tile(global.tilemap, 1, _x + dx, _y + dy)
+		}
+	}
 	
 	generate_dungeon(_x, _y, _rooms_n - 1)
 }

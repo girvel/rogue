@@ -1,19 +1,10 @@
 // @function set_position
 
 function set_position(_x, _y) {
-	if (_x < 0 
-		or _y < 0 
-		or _x >= global.level_w
-		or _y >= global.level_h
+	if (not in_grid(_x, _y, global.space)
 		or global.space[# _x, _y] != noone
 		or global.floor[# _x, _y] == 0
 	) {
-		show_debug_message(_x < 0)
-		show_debug_message(_y < 0)
-		show_debug_message(_x >= global.level_w)
-		show_debug_message(_y >= global.level_h)
-		show_debug_message(global.space[# _x, _y] != noone)
-		show_debug_message(global.floor[# _x, _y] == 0)
 		return false
 	}
 	

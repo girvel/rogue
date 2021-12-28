@@ -11,6 +11,7 @@
     {"id":{"name":"spr_main_character","path":"sprites/spr_main_character/spr_main_character.yy",},"order":0,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":1,},
     {"id":{"name":"obj_main_character","path":"objects/obj_main_character/obj_main_character.yy",},"order":0,},
+    {"id":{"name":"generate_room","path":"scripts/generate_room/generate_room.yy",},"order":5,},
     {"id":{"name":"obj_room_main_initializer","path":"objects/obj_room_main_initializer/obj_room_main_initializer.yy",},"order":3,},
     {"id":{"name":"room_main","path":"rooms/room_main/room_main.yy",},"order":0,},
   ],

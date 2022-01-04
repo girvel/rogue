@@ -1,4 +1,7 @@
-function generate_room(_x, _y, _dir_x, _dir_y) {
+function generate_room(_pos, _dir) {
+	_pos = vector_copy(_pos)
+	_dir = vector_copy(_dir)
+	
 	// I. Generate parameters
 	
 	var hallway_length = irandom_range(9, 13)
@@ -14,16 +17,16 @@ function generate_room(_x, _y, _dir_x, _dir_y) {
 	
 	//   I. Hallway
 	repeat (hallway_length) {
-		set_tile(global.tilemap, 1, new vector(_x, _y))
+		set_tile(global.tilemap, 1, _pos)
 		
-		_x += _dir_x;
-		_y += _dir_y;
+		_pos = vector_add(_pos, _dir)
 	}
 	
 	//   II. Room itself
-	for (var dx = -room_radius; dx <= room_radius; dx++)
-	for (var dy = -room_radius; dy <= room_radius; dy++) {
-		set_tile(global.tilemap, 1, new vector(_x + dx, _y + dy))
+	var delta = new vector(0, 0)
+	for (delta.x = -room_radius; delta.x <= room_radius; delta.x++)
+	for (delta.y = -room_radius; delta.y <= room_radius; delta.y++) {
+		set_tile(global.tilemap, 1, vector_add(_pos, delta))
 	}
 	
 	// IV. Return new entrypoints

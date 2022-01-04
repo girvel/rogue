@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"vector_add","path":"scripts/vector_add/vector_add.yy",},"order":3,},
     {"id":{"name":"tileset_default","path":"tilesets/tileset_default/tileset_default.yy",},"order":0,},
     {"id":{"name":"in_grid","path":"scripts/in_grid/in_grid.yy",},"order":4,},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"order":2,},
@@ -10,6 +11,7 @@
     {"id":{"name":"try_move","path":"scripts/try_move/try_move.yy",},"order":1,},
     {"id":{"name":"set_position","path":"scripts/set_position/set_position.yy",},"order":0,},
     {"id":{"name":"spr_main_character","path":"sprites/spr_main_character/spr_main_character.yy",},"order":0,},
+    {"id":{"name":"vector_copy","path":"scripts/vector_copy/vector_copy.yy",},"order":4,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":1,},
     {"id":{"name":"obj_main_character","path":"objects/obj_main_character/obj_main_character.yy",},"order":0,},
     {"id":{"name":"generate_room","path":"scripts/generate_room/generate_room.yy",},"order":5,},

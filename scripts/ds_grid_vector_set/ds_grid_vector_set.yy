@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "extensions",
+    "path": "folders/Scripts/vector_math/extensions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "generate_dungeon",
+  "name": "ds_grid_vector_set",
   "tags": [],
   "resourceType": "GMScript",
 }

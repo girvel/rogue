@@ -14,7 +14,7 @@ function generate_room(_x, _y, _dir_x, _dir_y) {
 	
 	//   I. Hallway
 	repeat (hallway_length) {
-		set_tile(global.tilemap, 1, _x, _y)
+		set_tile(global.tilemap, 1, new vector(_x, _y))
 		
 		_x += _dir_x;
 		_y += _dir_y;
@@ -23,7 +23,7 @@ function generate_room(_x, _y, _dir_x, _dir_y) {
 	//   II. Room itself
 	for (var dx = -room_radius; dx <= room_radius; dx++)
 	for (var dy = -room_radius; dy <= room_radius; dy++) {
-		set_tile(global.tilemap, 1, _x + dx, _y + dy)
+		set_tile(global.tilemap, 1, new vector(_x + dx, _y + dy))
 	}
 	
 	// IV. Return new entrypoints

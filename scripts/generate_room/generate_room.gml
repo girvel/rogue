@@ -9,17 +9,35 @@ function generate_room(_pos, _dir) {
 	
 	// II. Check whether it fits
 	
-	/*{
-		var size = vector_add(
-			vector_multiply(_dir, hallway_length),
-			vector_multiply(vector_one(), room_r * 2 + 3)
-		)
+	var _from = vector_add(
+		vector_multiply(vector_rotate(_dir), -room_r - 1),
+		_dir
+	)
+	
+	var _to = vector_add(
+		vector_multiply(_dir, hallway_length + room_r * 2 + 3), 
+		vector_multiply(vector_rotate(_dir), room_r + 1)
+	)
+	
+	if not in_grid(vector_add(_pos, _from), global.floor) or not in_grid(vector_add(_pos, _to), global.floor) {
+		return ds_list_of()	
+	}
+	
+	cj = {empty: true, pos: _pos}
+	for_rect(_from, _to, function(_d) {
+		if ds_grid_vector_get(global.floor, vector_add(cj.pos, _d)) != 0 {
+			show_debug_message("!!!")
+			cj.empty = false
+			return "break"
+		}
+	})
 		
-		cj = {empty: true}
-		for_rect(size, function(_d) {
-			
-		})
-	}*/
+	var empty = cj.empty
+	
+	if not empty {
+		show_debug_message("Collision!")
+		return ds_list_of()	
+	}
 	
 	// III. Create the room
 	

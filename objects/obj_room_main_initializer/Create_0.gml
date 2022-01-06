@@ -24,6 +24,7 @@ room_width  = global.level_w * global.grid_size
 generate_room(new vector(global.level_h / 2, global.level_w / 2), new vector(0, 1))
 
 // TODO instantiate_space()
+// TODO instance_create_grid
 with instance_create_layer(0, 0, "Instances", obj_main_character) {
-	set_position(global.level_h / 2, global.level_w / 2)
+	set_position(new vector(global.level_h / 2, global.level_w / 2))
 }

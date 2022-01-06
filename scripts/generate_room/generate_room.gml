@@ -33,6 +33,11 @@ function generate_room(_pos, _dir) {
 	
 	var entrypoints = ds_list_create()
 	
+	// TODO entrypoint_by_projection(from, direction, radius)
+	ds_list_add(entrypoints, {
+		pos: vector_add(_pos, vector_multiply(_dir, room_radius)),
+		dir: _dir
+	})
+	
 	return entrypoints
-	// ... returning here
 }

@@ -1,3 +1,5 @@
+randomize()
+
 global.cell_size = 64
 global.grid_size = new vector(100, 100)
 
@@ -20,7 +22,10 @@ room_height = global.grid_size.x * global.cell_size
 room_width  = global.grid_size.y * global.cell_size
 
 var _entrypoints = generate_room(vector_multiply(global.grid_size, .5), vector_down())
+var _e = _entrypoints[| 0]
 ds_list_destroy(_entrypoints)
+
+ds_list_destroy(generate_room(_e.pos, _e.dir))
 
 // TODO instantiate_space()
 // TODO instance_create_grid

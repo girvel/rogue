@@ -1,9 +1,10 @@
 {
   "resources": [
-    {"id":{"name":"vector_add","path":"scripts/vector_add/vector_add.yy",},"order":3,},
+    {"id":{"name":"vector_add","path":"scripts/vector_add/vector_add.yy",},"order":0,},
     {"id":{"name":"tileset_default","path":"tilesets/tileset_default/tileset_default.yy",},"order":0,},
     {"id":{"name":"vector_left","path":"scripts/vector_left/vector_left.yy",},"order":3,},
     {"id":{"name":"in_grid","path":"scripts/in_grid/in_grid.yy",},"order":4,},
+    {"id":{"name":"ds_grid_vector_create","path":"scripts/ds_grid_vector_create/ds_grid_vector_create.yy",},"order":2,},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},"order":2,},
     {"id":{"name":"ds_grid_vector_get","path":"scripts/ds_grid_vector_get/ds_grid_vector_get.yy",},"order":1,},
     {"id":{"name":"ds_grid_vector_set","path":"scripts/ds_grid_vector_set/ds_grid_vector_set.yy",},"order":0,},
@@ -18,6 +19,7 @@
     {"id":{"name":"vector_right","path":"scripts/vector_right/vector_right.yy",},"order":2,},
     {"id":{"name":"obj_main_character","path":"objects/obj_main_character/obj_main_character.yy",},"order":0,},
     {"id":{"name":"vector_up","path":"scripts/vector_up/vector_up.yy",},"order":1,},
+    {"id":{"name":"vector_multiply","path":"scripts/vector_multiply/vector_multiply.yy",},"order":1,},
     {"id":{"name":"vector_down","path":"scripts/vector_down/vector_down.yy",},"order":0,},
     {"id":{"name":"generate_room","path":"scripts/generate_room/generate_room.yy",},"order":5,},
     {"id":{"name":"obj_room_main_initializer","path":"objects/obj_room_main_initializer/obj_room_main_initializer.yy",},"order":3,},
@@ -53,9 +55,10 @@
     {"folderPath":"folders/Animation Curves.yy","order":12,"resourceVersion":"1.0","name":"Animation Curves","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Notes.yy","order":13,"resourceVersion":"1.0","name":"Notes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/vector_math.yy","order":6,"resourceVersion":"1.0","name":"vector_math","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/vector_math/extensions.yy","order":2,"resourceVersion":"1.0","name":"extensions","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Scripts/vector_math/constants.yy","order":7,"resourceVersion":"1.0","name":"constants","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/vector.yy","order":6,"resourceVersion":"1.0","name":"vector","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/vector/extensions.yy","order":2,"resourceVersion":"1.0","name":"extensions","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/vector/constants.yy","order":7,"resourceVersion":"1.0","name":"constants","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/vector/math.yy","order":9,"resourceVersion":"1.0","name":"math","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

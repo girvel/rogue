@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "constants",
-    "path": "folders/Scripts/vector_math/constants.yy",
+    "path": "folders/Scripts/vector/constants.yy",
   },
   "resourceVersion": "1.0",
   "name": "vector_up",

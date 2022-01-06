@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "constants",
-    "path": "folders/Scripts/vector/constants.yy",
+    "name": "math",
+    "path": "folders/Scripts/vector/math.yy",
   },
   "resourceVersion": "1.0",
-  "name": "vector_down",
+  "name": "vector_multiply",
   "tags": [],
   "resourceType": "GMScript",
 }

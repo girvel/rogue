@@ -31,5 +31,8 @@ function generate_room(_pos, _dir) {
 	
 	// IV. Return new entrypoints
 	
+	var entrypoints = ds_list_create()
+	
+	return entrypoints
 	// ... returning here
 }

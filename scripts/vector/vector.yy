@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "vector_math",
-    "path": "folders/Scripts/vector_math.yy",
+    "name": "vector",
+    "path": "folders/Scripts/vector.yy",
   },
   "resourceVersion": "1.0",
   "name": "vector",

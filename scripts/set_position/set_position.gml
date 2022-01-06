@@ -7,8 +7,8 @@ function set_position(_pos) {
 	
 	pos = vector_copy(_pos)
 	
-	x = pos.x * global.grid_size
-	y = pos.y * global.grid_size
+	x = pos.x * global.cell_size
+	y = pos.y * global.cell_size
 	
 	ds_grid_vector_set(global.space, pos, id)
 }

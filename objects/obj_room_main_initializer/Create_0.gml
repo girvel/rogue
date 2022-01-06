@@ -1,12 +1,10 @@
-global.grid_size = 64
+global.cell_size = 64
+global.grid_size = new vector(100, 100)
 
-global.level_w = 100
-global.level_h = 100
-
-global.space = ds_grid_create(global.level_w, global.level_h)
+global.space = ds_grid_vector_create(global.grid_size)
 ds_grid_clear(global.space, noone)
 
-global.floor = ds_grid_create(global.level_w, global.level_h)
+global.floor = ds_grid_vector_create(global.grid_size)
 ds_grid_clear(global.floor, 0)
 
 global.tilemap = layer_tilemap_create(
@@ -14,17 +12,18 @@ global.tilemap = layer_tilemap_create(
 	0, 
 	0, 
 	tileset_default, 
-	global.level_w, 
-	global.level_h
+	global.grid_size.x, 
+	global.grid_size.y
 )
 
-room_height = global.level_h * global.grid_size
-room_width  = global.level_w * global.grid_size
+room_height = global.grid_size.x * global.cell_size
+room_width  = global.grid_size.y * global.cell_size
 
-generate_room(new vector(global.level_h / 2, global.level_w / 2), new vector(0, 1))
+var _entrypoints = generate_room(vector_multiply(global.grid_size, .5), vector_down())
+ds_list_destroy(_entrypoints)
 
 // TODO instantiate_space()
 // TODO instance_create_grid
 with instance_create_layer(0, 0, "Instances", obj_main_character) {
-	set_position(new vector(global.level_h / 2, global.level_w / 2))
+	set_position(vector_multiply(global.grid_size, .5))
 }

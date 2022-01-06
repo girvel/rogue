@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "positioning",
-    "path": "folders/Scripts/positioning.yy",
+    "name": "generation",
+    "path": "folders/Scripts/generation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "set_position",
+  "name": "entry_by_projection",
   "tags": [],
   "resourceType": "GMScript",
 }

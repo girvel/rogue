@@ -5,7 +5,7 @@ function generate_room(_pos, _dir) {
 	// I. Generate parameters
 	
 	var hallway_length = irandom_range(9, 13)
-	var room_radius = irandom_range(2, 4)
+	var room_r = irandom_range(2, 4)
 	
 	// II. Check whether it fits
 	
@@ -24,8 +24,8 @@ function generate_room(_pos, _dir) {
 	
 	//   II. Room itself
 	var delta = new vector(0, 0)
-	for (delta.x = -room_radius; delta.x <= room_radius; delta.x++)
-	for (delta.y = -room_radius; delta.y <= room_radius; delta.y++) {
+	for (delta.x = -room_r; delta.x <= room_r; delta.x++)
+	for (delta.y = -room_r; delta.y <= room_r; delta.y++) {
 		set_tile(global.tilemap, 1, vector_add(_pos, delta))
 	}
 	
@@ -34,10 +34,7 @@ function generate_room(_pos, _dir) {
 	var entrypoints = ds_list_create()
 	
 	// TODO entrypoint_by_projection(from, direction, radius)
-	ds_list_add(entrypoints, {
-		pos: vector_add(_pos, vector_multiply(_dir, room_radius)),
-		dir: _dir
-	})
+	ds_list_add(entrypoints, entry_by_projection(_pos, _dir, room_r))
 	
 	return entrypoints
 }

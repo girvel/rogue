@@ -25,11 +25,7 @@ global.tilemap = layer_tilemap_create(
 room_height = global.grid_size.x * global.cell_size
 room_width  = global.grid_size.y * global.cell_size
 
-var _entrypoints = generate_room(vector_multiply(global.grid_size, .5), vector_down())
-var _e = _entrypoints[| 1]
-ds_list_destroy(_entrypoints)
-
-ds_list_destroy(generate_room(_e.pos, _e.dir))
+generate_dungeon(5)
 
 // TODO instantiate_space()
 // TODO instance_create_grid

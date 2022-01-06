@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "stl",
-    "path": "folders/Scripts/stl.yy",
+    "name": "generation",
+    "path": "folders/Scripts/generation.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ds_list_extend",
+  "name": "generate_dungeon",
   "tags": [],
   "resourceType": "GMScript",
 }

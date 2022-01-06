@@ -6,7 +6,7 @@
     "path": "folders/Scripts/stl.yy",
   },
   "resourceVersion": "1.0",
-  "name": "modulus",
+  "name": "ds_list_of",
   "tags": [],
   "resourceType": "GMScript",
 }

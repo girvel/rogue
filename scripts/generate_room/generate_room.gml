@@ -9,9 +9,17 @@ function generate_room(_pos, _dir) {
 	
 	// II. Check whether it fits
 	
-	var empty = true;
-	
-	// ... checking here
+	/*{
+		var size = vector_add(
+			vector_multiply(_dir, hallway_length),
+			vector_multiply(vector_one(), room_r * 2 + 3)
+		)
+		
+		cj = {empty: true}
+		for_rect(size, function(_d) {
+			
+		})
+	}*/
 	
 	// III. Create the room
 	
@@ -27,7 +35,7 @@ function generate_room(_pos, _dir) {
 		_pos: _pos
 	}
 	
-	for_square(room_r, function(_delta) {
+	for_square(-room_r, room_r, function(_delta) {
 		set_tile(global.tilemap, 1, vector_add(cj._pos, _delta))
 	})
 	

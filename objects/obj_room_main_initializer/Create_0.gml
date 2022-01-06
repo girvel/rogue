@@ -1,4 +1,4 @@
-if debug_mode {
+if not debug_mode {
 	randomize()
 }
 

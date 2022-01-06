@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"vector_add","path":"scripts/vector_add/vector_add.yy",},"order":0,},
+    {"id":{"name":"vector_rotate","path":"scripts/vector_rotate/vector_rotate.yy",},"order":2,},
     {"id":{"name":"tileset_default","path":"tilesets/tileset_default/tileset_default.yy",},"order":0,},
     {"id":{"name":"vector_left","path":"scripts/vector_left/vector_left.yy",},"order":3,},
     {"id":{"name":"entry_by_projection","path":"scripts/entry_by_projection/entry_by_projection.yy",},"order":1,},
@@ -13,6 +14,7 @@
     {"id":{"name":"set_tile","path":"scripts/set_tile/set_tile.yy",},"order":2,},
     {"id":{"name":"spr_stone","path":"sprites/spr_stone/spr_stone.yy",},"order":1,},
     {"id":{"name":"try_move","path":"scripts/try_move/try_move.yy",},"order":3,},
+    {"id":{"name":"modulus","path":"scripts/modulus/modulus.yy",},"order":9,},
     {"id":{"name":"set_position","path":"scripts/set_position/set_position.yy",},"order":1,},
     {"id":{"name":"spr_main_character","path":"sprites/spr_main_character/spr_main_character.yy",},"order":0,},
     {"id":{"name":"vector_copy","path":"scripts/vector_copy/vector_copy.yy",},"order":4,},

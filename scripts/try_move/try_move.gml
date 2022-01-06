@@ -1,9 +1,10 @@
-function try_move(_dx, _dy) {
-	var _pos = vector_add(new vector(_dx, _dy), pos)
+function try_move(_delta) {
+	var _pos = vector_add(_delta, pos)
 	
-	if (not in_grid(_pos, global.space)
-		or global.space[# _pos.x, _pos.y] != noone
-		or global.floor[# _pos.x, _pos.y] == 0
+	if (
+		not in_grid(_pos, global.space)
+		or ds_grid_vector_get(global.space, _pos) != noone
+		or ds_grid_vector_get(global.floor, _pos) == 0
 	) {
 		return false
 	}

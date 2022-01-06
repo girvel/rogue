@@ -23,11 +23,13 @@ function generate_room(_pos, _dir) {
 	}
 	
 	//    -II. Room itself
-	var delta = new vector(0, 0)
-	for (delta.x = -room_r; delta.x <= room_r; delta.x++)
-	for (delta.y = -room_r; delta.y <= room_r; delta.y++) {
-		set_tile(global.tilemap, 1, vector_add(_pos, delta))
+	cj = {
+		_pos: _pos
 	}
+	
+	for_square(room_r, function(_delta) {
+		set_tile(global.tilemap, 1, vector_add(cj._pos, _delta))
+	})
 	
 	// IV. Return new entrypoints
 	

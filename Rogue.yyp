@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"for_square","path":"scripts/for_square/for_square.yy",},"order":2,},
     {"id":{"name":"vector_add","path":"scripts/vector_add/vector_add.yy",},"order":0,},
     {"id":{"name":"ds_list_of","path":"scripts/ds_list_of/ds_list_of.yy",},"order":0,},
     {"id":{"name":"vector_rotate","path":"scripts/vector_rotate/vector_rotate.yy",},"order":2,},

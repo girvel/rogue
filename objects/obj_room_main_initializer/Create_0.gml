@@ -2,6 +2,8 @@ if debug_mode {
 	randomize()
 }
 
+globalvar cj
+
 global.cell_size = 64
 global.grid_size = new vector(100, 100)
 
@@ -34,5 +36,3 @@ ds_list_destroy(generate_room(_e.pos, _e.dir))
 with instance_create_layer(0, 0, "Instances", obj_main_character) {
 	set_position(vector_multiply(global.grid_size, .5))
 }
-
-ds_list_of(1, 2, 3)

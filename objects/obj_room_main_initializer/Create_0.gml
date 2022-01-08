@@ -4,7 +4,7 @@ if not debug_mode {
 
 globalvar cj
 
-global.cell_size = 64
+global.cell_size = 16
 global.grid_size = new vector(1000, 1000)
 
 global.space = ds_grid_vector_create(global.grid_size)
